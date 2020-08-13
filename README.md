@@ -1,3 +1,5 @@
+<!--lint disable no-dead-urls-->
+
 <p align="center"><img src="media/awesome-v-logo.svg" width="400"/></p>
 
 # Awesome V [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
@@ -16,26 +18,30 @@
   - [Graphics](#graphics)
   - [Games](#games)
   - [Command-line](#command-line)
-  - [Project Management](#project-management)
+  - [Project management](#project-management)
+  - [Serialization](#serialization)
 - [Libraries](#libraries)
-  - [Syntax highlighting](#syntax-highlighting)
-  - [Command Line Interface](#command-line-interface)
+  - [Command line interface](#command-line-interface)
   - [Text processing](#text-processing)
   - [Graphics](#graphics-1)
   - [Web](#web-1)
   - [Database clients](#database-clients)
   - [Audio](#audio)
-  - [Operating System](#operating-system)
+  - [Operating system](#operating-system)
   - [Automation](#automation)
   - [Telegram](#telegram)
+  - [IRC](#irc)
   - [Files](#files)
-  - [Game Development](#game-development)
+  - [Game development](#game-development)
   - [Eventing](#eventing)
-  - [User Interface Toolkits](#user-interface-toolkits)
-  - [Scientific Computing](#scientific-computing)
+  - [User Interface toolkits](#user-interface-toolkits)
+  - [Scientific computing](#scientific-computing)
+  - [Utility](#utility)
 - [Other](#other)
+  - [Syntax highlighting](#syntax-highlighting)
+  - [GitHub actions](#github-actions)
   - [Videos](#videos)
-  - [Programming Contests](#programming-contests)
+  - [Programming contests](#programming-contests)
   - [Tutorials](#tutorials)
   - [Online IDEs with V](#online-ides-with-v)
   - [Articles](#articles)
@@ -59,6 +65,7 @@
 
 ### Editors
 
+- [v-mode](https://github.com/damon-kwok/v-mode) - An Emacs major mode for the V programming language.
 - [vid](https://github.com/vlang/vid) - 1 MB text editor written in V with hardware accelerated text rendering. Compiles in <1s.
 
 ### Web
@@ -79,22 +86,20 @@
 
 - [HN-top](https://github.com/BafS/hn-top) - A simple command to list most recent news from hacker-news.
 - [vast](https://github.com/lydiandy/vast) - A simple tool for vlang, generate v source file to AST json file.
-### Project Management
+- [symlinker](https://github.com/Serkonda/symlinker) - A small Linux tool to manage symlinks.
+- [runner](https://github.com/Naheel-Azawy/runner) - A tool that automates running/compiling code written in various programming languages.
+
+### Project management
 
 - [vset](https://github.com/mulh8377/vset) - A project setup and configuration tool for V projects.
 
+### Serialization
+
+- [protoc-v](https://github.com/emily33901/protoc-v) - Protobuf compiler and plugin for V.
+
 ## Libraries
 
-### Syntax highlighting
-
-- [v-vim](https://github.com/ollykel/v-vim) - Support for V syntax highlighting in Vim.
-- [vim-v](https://github.com/cheap-glitch/vim-v) - Quality syntax highlighting for the V programming language.
-- [vscode-vlang](https://github.com/0x9ef/vscode-vlang) - V Language extension for Visual Studio Code.
-- [kate-syntax-highlight-v](https://github.com/Larpon/kate-syntax-highlight-v) - V syntax highlighting for [Kate](https://kate-editor.org/).
-- [scite-v-support](https://github.com/sunnylcw/scite-v-support) - V syntax highlighting for [SciTE](https://www.scintilla.org/SciTE.html).
-- [language-v](https://github.com/Cutlery-Drawer/language-v) - V language support for Atom (port of vscode-vlang).
-
-### Command Line Interface
+### Command line interface
 
 - [vargs](https://github.com/nedpals/vargs) - V library for parsing arguments from argv-like arrays.
 - [progressbar](https://github.com/Waqar144/progressbar) - An easy to use V library for creating progress bars in cli.
@@ -106,6 +111,8 @@
 - [v-regex](https://github.com/spytheman/v-regex) - A simple regex library for V.
 - [chalk](https://github.com/etienne-napoleone/chalk) - Colorize strings in the terminal.
 - [crayon](https://github.com/thecodrr/crayon) - Paint your terminal output like Picasso. 🖍️🎨
+- [cjson](https://github.com/lydiandy/cjson) - Wrap cJSON for vlang.
+- [ascii_robot](https://github.com/Delta456/ascii_robot) - ASCII Robot generator written in V.
 
 ### Graphics
 
@@ -122,6 +129,7 @@
 ### Database clients
 
 - [redis](https://github.com/patrickpissurno/vredis) - Redis client for V, written in V.
+- [vsql](https://github.com/lydiandy/vsql) - A sql query builder for V.
 
 ### Audio
 
@@ -129,9 +137,10 @@
 - [vspeech](https://github.com/thecodrr/vspeech) - Complete V bindings for Mozilla's DeepSpeech TensorFlow based Speech-to-Text library. 📢📜
 - [v-miniaudio](https://github.com/Larpon/v-miniaudio) - Bindings for the excellent miniaudio C audio library.
 
-### Operating System
+### Operating system
 
 - [clipboard](https://github.com/vlang/v/tree/master/vlib/clipboard) - V module for interacting with the OS clipboard. Fully cross-platform.
+- [vlipboard](https://github.com/asvvvad/vlipboard) - An easy to use wrapper of clipboard with Wayland and Termux support.
 
 ### Automation
 
@@ -139,46 +148,65 @@
 
 ### Telegram
 
-- [vgram](https://github.com/vpervenditti/vgram) - Telegram bot library.
+- [vgram](https://github.com/dariotarantini/vgram) - Telegram bot library.
+
+### IRC
+
+- [vitric](https://github.com/m-242/vitric) - A transparent IRC library.
 
 ### Files
 
 - [v-mime](https://github.com/nedpals/v-mime) - MIME detection library for V.
 
-### Game Development
+### Game development
 
 - [vraylib](https://github.com/MajorHard/vraylib) - V wrapper (bindings) for [raylib](https://www.raylib.com), the C game development framework.
-- [vSDL2](https://github.com/nsauzede/vsdl2) - SDL2 V module / libSDL2 wrapper (accompanying examples & tests are at [sdl2test](https://github.com/nsauzede/sdl2test)).
 
 ### Eventing
 
 - [eventbus](https://github.com/vlang/v/tree/master/vlib/eventbus) - A simple event bus system for V.
 
-### User Interface Toolkits
+### User Interface toolkits
 
 - [V UI](https://github.com/vlang/ui) - Integrated cross platform UI toolkit for Windows, macOS, Linux, Android, iOS and the web.
 - [vgtk3](https://github.com/vgtk/vgtk3) - A wrapper for GTK3 in V.
 - [vig](https://github.com/nsauzede/vig) - Bindings for [Dear ImGui](https://github.com/ocornut/imgui) GUI toolkit.
 - [vnk](https://github.com/nsauzede/vnk) - Bindings for [Nuklear](https://github.com/vurtun/nuklear) GUI toolkit.
 
-### Scientific Computing
+### Scientific computing
 
 - [vsl](https://github.com/vlang/vsl) - A pure-V scientific library with a great variety of functions.
 - [vnum](https://github.com/vlang-num/vnum) - Numerical computing library supporting n-dimensional data, backed by LAPACK and BLAS.
 
+### Utility
+
+- [range](https://github.com/Delta456/range) - Functionality of Python's range() in V.
+- [random](https://github.com/Delta456/random) - An all purpose random library written in V.
+
 ## Other
 
-- [lsp.v](https://github.com/nedpals/lsp.v) - Implementation of the Language Server Protocol spec on V.
+### Syntax highlighting
+
+- [v-vim](https://github.com/ollykel/v-vim) - Support for V syntax highlighting in Vim.
+- [vim-v](https://github.com/cheap-glitch/vim-v) - Quality syntax highlighting for the V programming language.
+- [vscode-vlang](https://github.com/0x9ef/vscode-vlang) - V Language extension for Visual Studio Code.
+- [kate-syntax-highlight-v](https://github.com/Larpon/kate-syntax-highlight-v) - V syntax highlighting for [Kate](https://kate-editor.org/).
+- [scite-v-support](https://github.com/sunnylcw/scite-v-support) - V syntax highlighting for [SciTE](https://www.scintilla.org/SciTE.html).
+- [language-v](https://github.com/Cutlery-Drawer/language-v) - V language support for Atom (port of vscode-vlang).
+
+### GitHub actions
+
+- [setup-v-action](https://github.com/marketplace/actions/setup-v-environment) - GitHub action automation to use V in your workflow.
 
 ### Videos
 
 - [V Programming Language](https://www.youtube.com/watch?v=BVCuZ7z7GMY&list=PLEPMhdsq-gNpFr40A-ZnX-Hu9l-Sp5Oc_)
 
-### Programming Contests
+### Programming contests
 
 - [Rosetta Code V](https://github.com/RustemB/rosetta-code-v) - Solutions for Rosetta Code in V.
-
 - [Advent of Code 2019](https://github.com/mvlootman/aoc2019) - Solution of Advent of Code 2019 in V.
+- [SoloLearn Coding Challenges](https://github.com/Serkonda/v-sololearn-coding-challenges) - Implementation of the SoloLearn coding challenges in V.
 
 ### Tutorials
 
@@ -188,8 +216,7 @@
 
 ### Online IDEs with V
 
-- [V Playground](https://vlang.io/play)
-- [Judge0 IDE](https://ide.judge0.com/?XN9q)
+- [V Playground](https://v-wasm.now.sh/)
 - [DevBits V Playground](https://devbits.app/play?lang=v&code64=Zm4gbWFpbigpIHsKCWFyZWFzIDo9IFsnZ2FtZScsICd3ZWInLCAndG9vbHMnLCAnc2NpZW5jZScsICdzeXN0ZW1zJywgJ2VtYmVkZGVkJywgJ2RyaXZlcnMnLCAnR1VJJywgJ21vYmlsZSddIAoJZm9yIGFyZWEgaW4gYXJlYXMgewoJCXByaW50bG4oJ0hlbGxvLCAkYXJlYSBkZXZlbG9wZXJzIScpCgl9Cn0K)
 
 ### Articles
